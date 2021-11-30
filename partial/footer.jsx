@@ -1,8 +1,8 @@
-import styles from '../../styles/Home.module.css'
+
 
 export default function Footer(){
     return(
-    <div className='flex justify-center bg-gray-300 '>
+    <div className='flex justify-center bg-gray mt-5 '>
         <div className='block mt-2'>
             <div className="flex list-none justify-center m-0 text-sm ">
                 <ul className="flex list-none justify-between m-0 flex-wrap">
