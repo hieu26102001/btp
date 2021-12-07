@@ -11,7 +11,8 @@ module.exports = {
         white: colors.white,
         gray: {
                  DEFAULT:'#adb5bd',
-                 light :'#e9ecef'
+                 light :'#e9ecef',
+                 dark:'#343a40'
               },
         indigo: colors.indigo,
         red:{
@@ -20,6 +21,7 @@ module.exports = {
               dark: '#009eeb',
           },
       },
+      fontFamily:[ 'Roboto', 'sans-serif']
     },
    
     container: {

@@ -7,8 +7,8 @@ import Zone2 from "./body/Zone2"
 export default function Body(){
 
     return(
-        <div className="md:grid grid-cols-12 container mt-10">
-        <div className="col-start-3 col-span-10">
+        <div className="md:grid grid-cols-12 container mt-10 mx-auto">
+        <div className="col-start-2 col-span-11">
             <Top/>
             <Refer/>
             <Multi/>

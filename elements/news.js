@@ -11,7 +11,7 @@ export const TopNew = [
     },
     {
         'article' : ' Hà Nội chuyển hướng phòng, chống dịch ',
-        'images' : '/SK1.jpeg',
+        'images' : '/Refer1.png',
         'link': '#'
     },
     {

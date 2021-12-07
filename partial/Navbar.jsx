@@ -11,7 +11,7 @@ export default function Example() {
 const [menuli , setMenu] = useRecoilState(Menulist)
 const [hover, serHover] = useState()
     return (
-      <Disclosure as="nav" className="bg-white sticky top-0 shadow mb-3">
+      <Disclosure as="nav" className="bg-white lg:sticky lg:top-0 shadow mb-3 z-50">
         {
           ({ open }) => (
           <>
@@ -87,6 +87,7 @@ const [hover, serHover] = useState()
             {/* Mobile menu list*/}
             <Disclosure.Panel className="lg:hidden ">
                 <div className="px-2 pt-2 pb-3 space-y-1">
+                  <input type='text'></input>
                   <ul className="bg-red-700">
                       {
                         Object.keys(Menu2).map((k) => (

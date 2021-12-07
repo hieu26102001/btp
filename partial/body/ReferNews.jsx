@@ -13,7 +13,7 @@ export default function Refer(){
                             layout="responsive" 
                             width={300}
                             height={180} />
-                          <p>  {item.article} </p>
+                          <p className="mt-2">  {item.article} </p>
                         </a>
                     </li>
                 )})}
