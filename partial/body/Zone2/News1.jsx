@@ -7,7 +7,7 @@ export default function News1(){
             <ul className=" lg:col-span-5 pr-5">
                 <a> 
                    <h2 className="flex bg-white text-primary text-bold ">
-                    <span class="bg-gray-700 p-2 items-center "> ABC </span>
+                    <span className="bg-gray-700 p-2 items-center "> ABC </span>
                     </h2>
                 </a>
                         {
@@ -17,9 +17,9 @@ export default function News1(){
                                         
                                         {
                                             i == 0 ?
-                                            <li className="text-2xl font-bold px-2 border-t-2 border-solid border-black">
+                                            <li className="text-2xl font-bold border-t-2 border-solid  border-black">
                                                 <a  href={item.link}>
-                                                    <img  src ={item.images}  layout="responsive" width={400} height={200}/>
+                                                    <img  src ={item.images} width="400" height="200"/>
                                                     <h3>{item.article}</h3>
                                                 </a>
                                             </li>:<li className="py-1 text-lg px-2"><a href={item.link}>{item.article}</a> </li>
@@ -34,7 +34,7 @@ export default function News1(){
             <ul className=" col-span-5 pr-5">
                 <a> 
                     <h2 className="flex bg-white text-primary text-bold border-b-2 border-solid border-black">
-                    <span class="bg-gray-700 p-2 items-center "> ABC </span>
+                    <span className="bg-gray-700 p-2 items-center "> ABC </span>
                     </h2>
                 </a>
                         {
@@ -44,7 +44,7 @@ export default function News1(){
                                         
                                         {
                                             i == 0 ?
-                                            <li className="text-2xl font-bold px-2">
+                                            <li className="text-2xl font-bold">
                                                 <a  href={item.link}>
                                                     <img  src ={item.images}  layout="responsive" width={400} height={200}/>
                                                     <h3>{item.article}</h3>
@@ -61,7 +61,7 @@ export default function News1(){
             <ul className=" col-span-5 pr-5">
                 <a> 
                      <h2 className="flex bg-white text-primary text-bold border-b-2 border-solid border-black">
-                    <span class="bg-gray-700 p-2 items-center "> ABC </span>
+                    <span className="bg-gray-700 p-2 items-center "> ABC </span>
                     </h2>   
                 </a>
                         {
@@ -71,7 +71,7 @@ export default function News1(){
                                         
                                         {
                                             i == 0 ?
-                                            <li className="text-2xl font-bold px-2">
+                                            <li className="text-2xl font-bold">
                                                 <a  href={item.link}>
                                                     <img  src ={item.images}  layout="responsive" width={400} height={200}/>
                                                     <h3>{item.article}</h3>

@@ -7,7 +7,7 @@ export default function News2(){
             <ul className=" col-span-5 pr-5">
                 <a> 
                     <h2 className="flex bg-white text-primary text-bold border-b-2 border-solid border-black">
-                    <span class="bg-gray-700 p-2 items-center "> ABC </span>
+                    <span className="bg-gray-700 p-2 items-center "> ABC </span>
                     </h2>
                 </a>
                         {
@@ -17,9 +17,9 @@ export default function News2(){
                                         
                                         {
                                             i == 0 ?
-                                            <div   style={{backgroundImage:`url(${item.images})` }} class="flex w-full bg-cover bg-center overflow-visible  shadow-lg hover:shadow-2xl text-xl items-end w-100 h-60 my-2 mb-5 ">
+                                            <div   style={{backgroundImage:`url(${item.images})` }} className="flex w-full bg-cover bg-center overflow-visible  shadow-lg hover:shadow-2xl text-xl items-end w-100 h-60 my-2 mb-5 ">
                                                 <a  href={item.link} >
-                                                    <div  class="text-primary text-xl font-bold text-end px-5">
+                                                    <div  className="text-primary text-xl font-bold text-end px-5">
                                                     <>{item.article}</> </div>
                                                 </a>
                                             </div>
@@ -40,7 +40,7 @@ export default function News2(){
             <ul className=" col-span-5 pr-5">
                 <a> 
                     <h2 className="flex bg-white text-primary text-bold border-b-2 border-solid border-black">
-                    <span class="bg-gray-700 p-2 items-center "> ABC </span>
+                    <span className="bg-gray-700 p-2 items-center "> ABC </span>
                     </h2>
                 </a>
                         {
@@ -50,9 +50,9 @@ export default function News2(){
                                         
                                 {
                                     i == 0 ?
-                                    <div   style={{backgroundImage:`url(${item.images})` }} class="flex w-full bg-cover bg-center overflow-visible  shadow-lg hover:shadow-2xl text-xl items-end w-100 h-60 my-2 mb-5">
+                                    <div   style={{backgroundImage:`url(${item.images})` }} className="flex w-full bg-cover bg-center overflow-visible  shadow-lg hover:shadow-2xl text-xl items-end w-100 h-60 my-2 mb-5">
                                         <a  href={item.link} >
-                                            <div  class="text-primary text-xl font-bold text-end px-5">
+                                            <div  className="text-primary text-xl font-bold text-end px-5">
                                             <>{item.article}</> </div>
                                         </a>
                                      </div>
@@ -73,7 +73,7 @@ export default function News2(){
             <ul className=" col-span-5 pr-5">
                 <a> 
                     <h2 className="flex bg-white text-primary text-bold border-b-2 border-solid border-black">
-                    <span class="bg-gray-700 p-2 items-center "> ABC </span>
+                    <span className="bg-gray-700 p-2 items-center "> ABC </span>
                     </h2>
                 </a>
                         {
@@ -83,9 +83,9 @@ export default function News2(){
                                         
                                 {
                                     i == 0 ?
-                                    <div   style={{backgroundImage:`url(${item.images})` }} class="flex w-full bg-cover bg-center overflow-visible  shadow-lg hover:shadow-2xl text-xl items-end w-100 h-60 my-2 mb-5">
+                                    <div   style={{backgroundImage:`url(${item.images})` }} className="flex w-full bg-cover bg-center overflow-visible  shadow-lg hover:shadow-2xl text-xl items-end w-100 h-60 my-2 mb-5">
                                         <a  href={item.link} >
-                                            <div  class="text-primary text-xl font-bold text-end px-5">
+                                            <div  className="text-primary text-xl font-bold text-end px-5">
                                             <>{item.article}</> </div>
                                         </a>
                                      </div>

@@ -4,14 +4,14 @@ import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import { Menu2 } from '../elements/menu'
 import { Menulist } from '../elements/menulist'
 import { useRecoilState, useRecoilValue } from 'recoil'
-function classNames(...classes) {
-return classes.filter(Boolean).join(' ')
+function classNames(...classNamees) {
+return classNamees.filter(Boolean).join(' ')
 }
 export default function Example() {
 const [menuli , setMenu] = useRecoilState(Menulist)
 const [hover, serHover] = useState()
     return (
-      <Disclosure as="nav" className="bg-white lg:sticky lg:top-0 shadow mb-3 z-50">
+      <Disclosure as="nav" className="bg-red lg:bg-white sticky top-0 shadow mb-3 z-50">
         {
           ({ open }) => (
           <>
@@ -19,11 +19,11 @@ const [hover, serHover] = useState()
                 <div className="relative flex items-center justify-between h-10">
                   <div className="absolute inset-y-0 left-0 flex items-center justify-end lg:hidden">
                       {/* Mobile menu button*/}
-                      <Disclosure.Button className="inline-flex items-center justify-items-end p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                      <Disclosure.Button className="inline-flex items-center justify-items-end p-2 text-gray-400 hover:text-white hover:bg-white  ">
                         <span className="sr-only">Open main menu</span>
                         {open ? (
                         <XIcon className="block h-6 w-6" aria-hidden="true" />
-                        ) : (
+                        ) : ( 
                         <MenuIcon className="block h-6 w-6" aria-hidden="true" />
                         )}
                       </Disclosure.Button>
@@ -33,7 +33,7 @@ const [hover, serHover] = useState()
                       <div className="flex-shrink-0 flex items-center justify-center pr-2">
                         <img
                             className="block lg:hidden h-8 w-auto justify-center"
-                            src="http://localhost:3000/Home.png"
+                            src="https://static-cms-tpo.zadn.vn/v3/web/styles/img/logo-web-white.png"
                             alt="Workflow"
                             />
                         <img
@@ -85,7 +85,7 @@ const [hover, serHover] = useState()
                 </div>
             </div>
             {/* Mobile menu list*/}
-            <Disclosure.Panel className="lg:hidden ">
+            <Disclosure.Panel className="lg:hidden text-primary">
                 <div className="px-2 pt-2 pb-3 space-y-1">
                   <input type='text'></input>
                   <ul className="bg-red-700">

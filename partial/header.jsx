@@ -10,7 +10,7 @@ export default function Header(){
 
 
     return(
-        <div class="pt-5 lg:block hidden">
+        <div className="pt-5 lg:block hidden">
             <div className="flex h-14 justify-center">
                 <div className='flex justify-end container'>
                     <ul className='flex list-none mb-0 mt-3 text-right text-gray '>

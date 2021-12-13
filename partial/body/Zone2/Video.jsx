@@ -4,17 +4,17 @@ export default function Video(){
 console.log(typeof Multinews)
 return(
 <div className="bg-gray-dark mt-10" >
-   <div className="flex text-lg text-primary content-end border-b-2 border-gray-400 border-solid">
+   <div className="flex text-lg text-primary content-end border-b-2 border-gray-400 border-solid mt-1">
         <h4 className="px-3 text-2xl text-red-800 font-semibold py-1">VIDEO</h4>
-            {/* {
+            {
                 Multihead.map(item=> {return(
-                <a class="px-3 font-semibold   hidden lg:block" href={item.link}>{item.title}</a>
+                <a className="px-3 font-semibold content-center hidden lg:flex mt-1 pb-1" href={item.link}>{item.title}</a>
                 )})
-            } */}
+            }
    </div>
    <div className="block grid-cols-8 lg:grid  rounded-lg shadow-sm ">
       <div className="col-span-4 ">
-         <div class="items-center p-4  text-primary ">
+         <div className="items-center p-4  text-primary ">
                         {
                            TopNew.map((item, i) => {
                                 return( 
@@ -35,15 +35,15 @@ return(
          </div>
       </div>
       <div className="col-span-4 py-4">
-         <section class="container mx-auto ">
-            <div class="text-primary ">
+         <section className="container mx-auto ">
+            <div className="text-primary ">
                         {
                            TopNew.map((item, i) => {
                                 return( 
                                     <div>
                                         {
                                             i != 0 && i <= 4  ?
-                                            <div className="text-xl mb-2 flex flex-wrap h-30 w-35 ">
+                                            <div className="text-xl mb-2 flex flex-wrap h-30 w-35 px-4">
                                                 <a  href={item.link} className="flex justify-center items-center">
                                                     <img  src ={item.images} width="140" height="80"/>
                                                     <div  className="px-2">{item.article}</div>

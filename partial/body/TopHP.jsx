@@ -5,7 +5,7 @@ export default function Top(){
     console.log(TopNew)
     return(
                 <div className="flex mx-auto justify-start">
-                    <ul className=" col-span-5 pr-5">
+                    <ul className="">
                         
                         {
                            TopNew.map((item, i) => {
@@ -25,10 +25,10 @@ export default function Top(){
                             })
                         } 
                     </ul>
-                    <ul className="w-300 bb-2 col-span-2 text-lg hidden lg:block"> 
+                    <ul className="w-300 text-lg hidden lg:block mt-1"> 
                         {
                             TopNew.map(item => {return(
-                                <li className="border-t-2 p-2 border-solid border-gray">
+                                <li className="border-b-2 p-2 border-solid border-gray">
                                     <a href={item.link}>
                                             {item.article}
                                     </a>
