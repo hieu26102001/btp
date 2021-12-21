@@ -8,8 +8,8 @@ return(
    <div className="flex text-lg content-end">
         <h4 className="px-3 text-2xl text-red-800 font-semibold">HOA HAU</h4>
     </div>
-   <div className="block grid-cols-8 lg:grid  rounded-lg shadow-sm dark:bg-gray-800">
-      <div className="col-span-5 ">
+   <div className="block grid-cols-12 lg:grid  rounded-lg shadow-sm dark:bg-gray-800">
+      <div className="col-span-6 ">
          <div className="items-center p-4 ">
          {
                            TopNew.map((item, i) => {
@@ -19,7 +19,7 @@ return(
                                             i == 0 ?
                                             <div   style={{backgroundImage:`url(${item.images})` }} className="flex bg-cover bg-center overflow-visible  shadow-lg hover:shadow-2xl text-xl items-end  h-80 mb-5">
                                                 <a  href={item.link} >
-                                                    <div  className="text-primary text-lg font-bold text-end px-5">
+                                                    <div  className="text-primary text-2xl font-bold text-end px-5">
                                                     <>{item.article}</> </div>
                                                 </a>
                                             </div>:null
@@ -31,7 +31,7 @@ return(
                         } 
          </div>
       </div>
-      <div className="flex col-span-3">
+      <div className="flex col-span-6">
          {/* <!-- component --> */}
          <section className="container px-6 py-4 mx-auto ">
             <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-2 ">
@@ -43,8 +43,8 @@ return(
                                        {
                                             i != 0 && i <= 4  ?
                                             <div className="font-semibold lg:flex lg:flex-wrap">
-                                                <a  href={item.link} className="flex lg:block items-center justify-between">
-                                                    <Image  src ={item.images} width={209} height={130}/>
+                                                <a  href={item.link} className="flex lg:block items-center justify-between w-60 ">
+                                                    <Image  src ={item.images} width={220} height={100}/>
                                                     <div className="ml-2">{item.article}</div>
                                                 </a>
                                             </div>:null

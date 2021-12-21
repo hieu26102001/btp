@@ -5,7 +5,7 @@ import Video from "./Zone2/Video";
 
 export default function Zone2(){
     return(
-        <div className="mx-auto mt-10">
+        <div className="mx-auto">
             <News1/>
             <Video/>
             <News2/>

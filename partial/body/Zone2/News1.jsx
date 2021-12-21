@@ -2,8 +2,8 @@ import { TopNew } from "../../../elements/news"
 
 export default function News1(){
     return(
-        <div className=" grid lg:grid-cols-3 grid-cols-1">
-            <div className="mt-5">
+        <div className=" grid lg:grid-cols-3 grid-cols-1 mt-2">
+            <div className="">
             <ul className=" lg:col-span-5 pr-5">
                 <a> 
                    <h2 className="flex bg-white text-primary text-bold ">
@@ -30,7 +30,7 @@ export default function News1(){
                         } 
                     </ul>
             </div>
-            <div className="mt-5">
+            <div className="">
             <ul className=" col-span-5 pr-5">
                 <a> 
                     <h2 className="flex bg-white text-primary text-bold border-b-2 border-solid border-black">
@@ -57,7 +57,7 @@ export default function News1(){
                         } 
                     </ul>
             </div>
-            <div className="mt-5">
+            <div className="">
             <ul className=" col-span-5 pr-5">
                 <a> 
                      <h2 className="flex bg-white text-primary text-bold border-b-2 border-solid border-black">

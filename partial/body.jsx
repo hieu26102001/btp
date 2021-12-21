@@ -7,8 +7,8 @@ import Zone2 from "./body/Zone2"
 export default function Body(){
 
     return(
-        <div className="lg:grid grid-cols-12 container mt-1 mx-auto">
-        <div className="col-start-2 col-span-11">
+        <div className="lg:grid grid-cols-12 container mt-1 mx-auto ">
+        <div className="pl-8 col-start-1 col-span-12">
             <Top/>
             <Refer/>
             <Multi/>

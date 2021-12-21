@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Header(){
     var today = new Date()
     var date = today.getDate();
-    var month = today.getMonth();
+    var month = today.getMonth()+1;
     var year = today.getFullYear();
     var options = { weekday: 'long'};
 
@@ -37,16 +37,16 @@ export default function Header(){
             </div>
                 <div  >
                     <div className='flex h-20 bg-red justify-center'>
-                        <div className="flex flex-wrap justify-between container ">
+                        <div className="flex flex-wrap justify-between container pb-2">
                             <div className='mt-2 flex-2'><img src='http://localhost:3000/Logo.png'/></div>
-                            <div className='slick'></div>
-                            <ul className="text-xs">
-                                <li className="text-primary pb-2 pt-1">
+                            <div className='flex items-end pb-2'><div>ASASA</div></div>
+                            <div className="text-xs items-center">
+                                <div className="text-primary pb-2 pt-1">
                                     {new Intl.DateTimeFormat('vi-VN', options).format(today)},
                                 ngày &nbsp; {date} / {month} / {year}
-                                </li>
-                                <li><input type='text'></input></li>
-                            </ul>
+                                </div>
+                                <div><input type='text'></input></div>
+                            </div>
                         </div>
                     </div>
                 </div>

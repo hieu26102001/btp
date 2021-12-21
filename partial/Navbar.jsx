@@ -29,10 +29,10 @@ const [hover, serHover] = useState()
                       </Disclosure.Button>
                   </div>
                   {/*Menu list*/}
-                  <div className="flex-1 flex items-center justify-center sm:items-stretch lg:justify-start">
+                  <div className="flex-1 flex items-center lg:justify-start justify-center sm:items-stretch font-semibold ">
                       <div className="flex-shrink-0 flex items-center justify-center pr-2">
                         <img
-                            className="block lg:hidden h-8 w-auto justify-center"
+                            className="block lg:hidden h-8 w-auto "
                             src="https://static-cms-tpo.zadn.vn/v3/web/styles/img/logo-web-white.png"
                             alt="Workflow"
                             />
@@ -42,12 +42,12 @@ const [hover, serHover] = useState()
                             alt="Workflow"
                             />
                       </div>
-                      <div className="hidden lg:block  ">
-                        <ul className="flex space-x-4 text-sm">
+                      <div className="hidden lg:block  justify-center">
+                        <ul className="flex space-x-4 text-sm justify-start flex-wrap">
                             {Object.keys(Menu2).map((k) =>
                               {
                                 return (
-                                  <li  onMouseEnter={() =>
+                                  <li className="w-max" onMouseEnter={() =>
                                   {
                                     return(
                                       setMenu(Menu2[k].list),

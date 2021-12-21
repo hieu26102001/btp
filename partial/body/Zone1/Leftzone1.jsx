@@ -7,23 +7,23 @@ export default function LeftZone1(){
     const [giaitri, setnews] = useState(Menu2.Giaitri.list)
     console.log(giaitri)
         return(
-        <div className="grid grid-cols-4 mx-auto px-2">
+        <div className="grid grid-cols-4 mx-auto px-2 col-span-7">
         <div className="col-span-4">
             {/* <!-- component --> */}
                 <section className="container px-5 py-4 mx-auto ">
                     <div className="grid gap-6 mb-8 md:grid-cols-1">
                         {/* <!-- Card 1 --> */}
                         {
-                            Left1.map(item =>{
+                            Left1.map((item , i) =>{
                                 return(
                                 <div>
                                     <a href={item.link}>
-                                        <h3 className="lg:text-3xl lg:font-bold font-semibold">
+                                        <h3 className="lg:text-3xl lg:font-bold font-semibold ">
                                             {item.article}
                                         </h3>
-                                        <div className="lg:flex hidden items-center ">
+                                        <div className="lg:flex hidden items-center gap-2">
                                             <img layout="responsive" src={item.img} width={300} height={180}/>
-                                            <p >{item.para}</p>
+                                            <p className="font-normal text-justify">{item.para}</p>
                                         </div>
                                     </a>
                                 </div>
@@ -54,7 +54,7 @@ export default function LeftZone1(){
                                         <div className="mx-auto mb-2">
                                         <a  href={item.link}>
                                             <img  src ={item.img} width="300" height="180" className="object-cover w-full"/>
-                                            <div className="text-xl mt-2 break-all">{item.article}</div>
+                                            <div className="text-xl mt-2">{item.article}</div>
                                         </a>
                                         </div>
                                     )
@@ -69,17 +69,19 @@ export default function LeftZone1(){
                         {/* <!-- Card 1 --> */}
                         {
                             Left3.map(
-                                item => {
+                                (item , i)  => {
                                     return(
-                                        <div>
-                                        <a href={item.link}>
-                                            <h3 className="lg:text-3xl lg:font-bold font-semibold">{item.article}</h3>
-                                            <div className="lg:flex hidden items-center ">
-                                                <img className="w-45  border-2 border-gray-300" src={item.img} />
-                                                <p className="">{item.para}</p>
+                                        <>
+                                      { i < 6 ?<a href={item.link}>
+                                            <h3 className="lg:text-3xl lg:font-bold font-semibold ">
+                                                {item.article}
+                                            </h3>
+                                            <div className="lg:flex hidden items-center gap-2">
+                                                <img layout="responsive" src={item.img} width={300} height={180}/>
+                                                <p className="font-normal text-justify">{item.para}</p>
                                             </div>
-                                        </a>
-                                        </div>
+                                        </a>: null}
+                                    </>
                                     )
                                 }
                             )
