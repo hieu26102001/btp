@@ -1,104 +1,13 @@
 import { TopNew } from "../../../elements/news"
+import News1 from "../Zone2/News1"
+import { TopNew2 } from "../../../elements/news"
 
 export default function RZone1(){
     return(
-        <div className="col-span-4">
-            <div className="mt-5 ">
-            <ul className="pr-5 ">
-                <a> 
-                    <h2 className="flex bg-white text-primary text-bold border-b-2 border-solid border-black">
-                    <span className="bg-gray-700 p-2 items-center "> ABC </span>
-                    </h2>
-                </a>
-                        {
-                           TopNew.map((item, i) => {
-                                return( 
-                                    <div className="bg-gray-light px-2">
-                                        
-                                        {
-                                            i == 0 ?
-                                            <li className="text-2xl font-semibold pb-3 border-b-2 border-solid border-gray-400 ">
-                                                <a  href={item.link}>
-                                                    <img  src ={item.images}  layout="responsive" width={400} height={200}/>
-                                                    <h3>{item.article}</h3>
-                                                </a>
-                                            </li>:null
-                                        }
-                                        {
-                                            i != 0 && i < 5 
-                                            ?<li className="border-b-2 border-solid border-gray-400 text-lg "><a href={item.link}>{item.article}</a> </li>
-                                            :null
-                                        }
-                                    </div>
-                                )
-                            })
-                        } 
-                    </ul>
-            </div>
-            <div className="mt-5">
-            <ul className=" col-span-5 pr-5">
-                <a> 
-                    <h2 className="flex bg-white text-primary text-bold border-b-2 border-solid border-black">
-                    <span className="bg-gray-700 p-2 items-center "> ABC </span>
-                    </h2>
-                </a>
-                        {
-                           TopNew.map((item, i) => {
-                                return( 
-                                    <div className="bg-gray-light px-2">
-                                        
-                                        {
-                                            i == 0 ?
-                                            <li className="text-2xl font-semibold pb-3 border-b-2 border-solid border-gray-400 ">
-                                                <a  href={item.link}>
-                                                    <img  src ={item.images}  layout="responsive" width={400} height={200}/>
-                                                    <h3>{item.article}</h3>
-                                                </a>
-                                            </li>:null
-                                        }
-                                        {
-                                            i != 0 && i < 5 
-                                            ?<li className="border-b-2 border-solid border-gray-400 text-lg "><a href={item.link}>{item.article}</a> </li>
-                                            :null
-                                        }
-                                    </div>
-                                )
-                            })
-                        } 
-                    </ul>
-            </div>
-            <div className="mt-5">
-            <ul className=" col-span-5 pr-5">
-                <a> 
-                    <h2 className="flex bg-white text-primary text-bold border-b-2 border-solid border-black">
-                    <span className="bg-gray-700 p-2 items-center "> ABC </span>
-                    </h2>
-                </a>
-                        {
-                           TopNew.map((item, i) => {
-                                return( 
-                                    <div className="bg-gray-light px-2">
-                                        
-                                    {
-                                        i == 0 ?
-                                        <li className="text-2xl font-semibold pb-3 border-b-2 border-solid border-gray-400 ">
-                                            <a  href={item.link}>
-                                                <img  src ={item.images}  layout="responsive" width={400} height={200}/>
-                                                <h3>{item.article}</h3>
-                                            </a>
-                                        </li>:null
-                                    }
-                                    {
-                                        i != 0 && i < 5 
-                                        ?<li className="border-b-2 border-solid border-gray-400 text-lg "><a href={item.link}>{item.article}</a> </li>
-                                        :null
-                                    }
-                                </div>
-                                )
-                            })
-                        } 
-                    </ul>
-            </div>
+        <div className="col-span-3 md:grid-cols-3 md:grid lg:block mt-2 gap-x-8">
+                <News1 TopNew={TopNew} title="Giar tri" /> 
+                <News1 TopNew={TopNew2} title="Giar tri" /> 
+                <News1 TopNew={TopNew} title="Giar tri" /> 
         </div>
     )
 }

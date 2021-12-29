@@ -11,7 +11,7 @@ export default function Header(){
 
     return(
         <div className="pt-5 lg:block hidden">
-            <div className="flex h-14 justify-center">
+            <div className="flex justify-center">
                 <div className='flex justify-end container'>
                     <ul className='flex list-none mb-0 mt-3 text-right text-gray '>
                         <li className='px-4'>TÒA SOẠN</li>
@@ -37,9 +37,9 @@ export default function Header(){
             </div>
                 <div  >
                     <div className='flex h-20 bg-red justify-center'>
-                        <div className="flex flex-wrap justify-between container pb-2">
-                            <div className='mt-2 flex-2'><img src='http://localhost:3000/Logo.png'/></div>
-                            <div className='flex items-end pb-2'><div>ASASA</div></div>
+                        <div className="flex flex-wrap justify-between container pb-2 font-normal mx-auto">
+                            <a className='mt-2 flex-2' href="/"><img src='http://localhost:3000/Logo.png'/></a>
+                            <div className='flex items-end pb-2'><div>DIEN BIEN COVID</div></div>
                             <div className="text-xs items-center">
                                 <div className="text-primary pb-2 pt-1">
                                     {new Intl.DateTimeFormat('vi-VN', options).format(today)},

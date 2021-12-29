@@ -21,7 +21,9 @@ module.exports = {
               dark: '#009eeb',
           },
       },
-      fontFamily:[ 'Roboto', 'sans-serif']
+      fontFamily:{
+        'sans': ['Roboto', 'Helvetica', 'Arial', 'sans-serif']
+      }
     },
    
     container: {

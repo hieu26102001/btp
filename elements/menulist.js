@@ -5,7 +5,7 @@ export const Menulist = atom({
     default:[]
 })
 
-export const TopNews = atom ({
-    key: 'Topnews',
+export const MucMenu = atom ({
+    key: 'Muc',
     default:[]
 })

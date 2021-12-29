@@ -7,14 +7,13 @@ import Zone2 from "./body/Zone2"
 export default function Body(){
 
     return(
-        <div className="lg:grid grid-cols-12 container mt-1 mx-auto ">
-        <div className="pl-8 col-start-1 col-span-12">
+        <div>
             <Top/>
             <Refer/>
             <Multi/>
             <Zone1/>
             <Zone2/>
         </div>
-        </div>
+
     )
 }

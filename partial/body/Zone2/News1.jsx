@@ -1,15 +1,15 @@
-import { TopNew } from "../../../elements/news"
-
-export default function News1(){
+import Image from 'next/image'
+export default function News1({TopNew,title,children,Active}){
     return(
-        <div className=" grid lg:grid-cols-3 grid-cols-1 mt-2">
-            <div className="">
-            <ul className=" lg:col-span-5 pr-5">
-                <a> 
+     
+            <div className="mb-2">
+                <a href="/Muc"> 
                    <h2 className="flex bg-white text-primary text-bold ">
-                    <span className="bg-gray-700 p-2 items-center "> ABC </span>
+                    <span className="bg-gray-700 p-2 items-center "> {title} </span>
                     </h2>
                 </a>
+                <div className=" lg:col-span-5 w-full">
+                
                         {
                            TopNew.map((item, i) => {if(i < 5 )
                                { return( 
@@ -17,72 +17,28 @@ export default function News1(){
                                         
                                         {
                                             i == 0 ?
-                                            <li className="text-2xl font-bold border-t-2 border-solid  border-black">
+                                            <div className="text-2xl font-bold border-t-2 border-solid py-1 border-black">
                                                 <a  href={item.link}>
-                                                    <img  src ={item.images} width="400" height="200"/>
+                                                    <Image  src ={item.images} width={400} height={200} className="py-1"/>
                                                     <h3>{item.article}</h3>
                                                 </a>
-                                            </li>:<li className="py-1 text-lg px-2"><a href={item.link}>{item.article}</a> </li>
+                                            </div>:null
                                         }
-                                    </>
-                                )}
-                            })
-                        } 
-                    </ul>
-            </div>
-            <div className="">
-            <ul className=" col-span-5 pr-5">
-                <a> 
-                    <h2 className="flex bg-white text-primary text-bold border-b-2 border-solid border-black">
-                    <span className="bg-gray-700 p-2 items-center "> ABC </span>
-                    </h2>
-                </a>
-                        {
-                           TopNew.map((item, i) => {if(i < 5 )
-                               { return( 
-                                    <>
-                                        
                                         {
-                                            i == 0 ?
-                                            <li className="text-2xl font-bold">
-                                                <a  href={item.link}>
-                                                    <img  src ={item.images}  layout="responsive" width={400} height={200}/>
-                                                    <h3>{item.article}</h3>
+                                            i !=0 && i<=4 ?
+                                            <div className="text-2xl py-1 ">
+                                                <a  href={item.link} className='flex text-lg '>
+                                                    <div className={Active?"mr-2":"hidden"}>
+                                                    <Image  src ={item.images} width={400} height={200} />
+                                                    </div>
+                                                    <div>{item.article}</div>
                                                 </a>
-                                            </li>:<li className="py-1 text-lg px-2"><a href={item.link}>{item.article}</a> </li>
+                                            </div>:null
                                         }
                                     </>
                                 )}
                             })
                         } 
-                    </ul>
+                    </div>
             </div>
-            <div className="">
-            <ul className=" col-span-5 pr-5">
-                <a> 
-                     <h2 className="flex bg-white text-primary text-bold border-b-2 border-solid border-black">
-                    <span className="bg-gray-700 p-2 items-center "> ABC </span>
-                    </h2>   
-                </a>
-                        {
-                           TopNew.map((item, i) => {if(i < 5 )
-                               { return( 
-                                    <>
-                                        
-                                        {
-                                            i == 0 ?
-                                            <li className="text-2xl font-bold">
-                                                <a  href={item.link}>
-                                                    <img  src ={item.images}  layout="responsive" width={400} height={200}/>
-                                                    <h3>{item.article}</h3>
-                                                </a>
-                                            </li>:<li className="py-1 text-lg px-2"><a href={item.link}>{item.article}</a> </li>
-                                        }
-                                    </>
-                                )}
-                            })
-                        } 
-                    </ul>
-            </div>
-        </div>
     )}
