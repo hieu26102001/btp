@@ -2,33 +2,64 @@ export const TopNew = [
     {
         'article' : ' Hà Nội chuyển hướng phòng, chống dịch ',
         'images' : '/SK1.jpeg',
-        'link': '#'
+        'link': '/Tin',
+        "para":"Ngày 23/11, Giám đốc Đài Khí tượng thủy văn tỉnh Lào Cai Lưu Minh Hải cho biết, không khí lạnh đang tăng cường xuống Lào Cai đạt ngưỡng cực đại, kéo theo nhiệt độ các khu vực ở địa phương sẽ giảm xuống mức thấp nhất trong đợt rét này.",
     },
     {
         'article' : ' Hà Nội chuyển hướng phòng, chống dịch ',
         'images' : '/SK1.jpeg',
-        'link': '#'
-    },
-    {
-        'article' : ' Hà Nội chuyển hướng phòng, chống dịch ',
-        'images' : '/Refer1.png',
-        'link': '#'
+        'link': '/Tin',
+        "para":"Ngày 23/11, Giám đốc Đài Khí tượng thủy văn tỉnh Lào Cai Lưu Minh Hải cho biết, không khí lạnh đang tăng cường xuống Lào Cai đạt ngưỡng cực đại, kéo theo nhiệt độ các khu vực ở địa phương sẽ giảm xuống mức thấp nhất trong đợt rét này.",
     },
     {
         'article' : ' Hà Nội chuyển hướng phòng, chống dịch ',
         'images' : '/SK1.jpeg',
-        'link': '#'
+        'link': '/Tin',
+        "para":"Ngày 23/11, Giám đốc Đài Khí tượng thủy văn tỉnh Lào Cai Lưu Minh Hải cho biết, không khí lạnh đang tăng cường xuống Lào Cai đạt ngưỡng cực đại, kéo theo nhiệt độ các khu vực ở địa phương sẽ giảm xuống mức thấp nhất trong đợt rét này.",
     },
     {
         'article' : ' Hà Nội chuyển hướng phòng, chống dịch ',
         'images' : '/SK1.jpeg',
-        'link': '#'
+        'link': '/Tin',
+        "para":"Ngày 23/11, Giám đốc Đài Khí tượng thủy văn tỉnh Lào Cai Lưu Minh Hải cho biết, không khí lạnh đang tăng cường xuống Lào Cai đạt ngưỡng cực đại, kéo theo nhiệt độ các khu vực ở địa phương sẽ giảm xuống mức thấp nhất trong đợt rét này.",
     },
     {
         'article' : ' Hà Nội chuyển hướng phòng, chống dịch ',
         'images' : '/SK1.jpeg',
-        'link': '#'
+        'link': '/Tin',
+        "para":"Ngày 23/11, Giám đốc Đài Khí tượng thủy văn tỉnh Lào Cai Lưu Minh Hải cho biết, không khí lạnh đang tăng cường xuống Lào Cai đạt ngưỡng cực đại, kéo theo nhiệt độ các khu vực ở địa phương sẽ giảm xuống mức thấp nhất trong đợt rét này.",
     },
+    {
+        'article' : ' Hà Nội chuyển hướng phòng, chống dịch ',
+        'images' : '/SK1.jpeg',
+        'link': '/Tin',
+        "para":"Ngày 23/11, Giám đốc Đài Khí tượng thủy văn tỉnh Lào Cai Lưu Minh Hải cho biết, không khí lạnh đang tăng cường xuống Lào Cai đạt ngưỡng cực đại, kéo theo nhiệt độ các khu vực ở địa phương sẽ giảm xuống mức thấp nhất trong đợt rét này.",
+    },
+    {
+        'article' : ' Hà Nội chuyển hướng phòng, chống dịch ',
+        'images' : '/SK1.jpeg',
+        'link': '/Tin',
+        "para":"Ngày 23/11, Giám đốc Đài Khí tượng thủy văn tỉnh Lào Cai Lưu Minh Hải cho biết, không khí lạnh đang tăng cường xuống Lào Cai đạt ngưỡng cực đại, kéo theo nhiệt độ các khu vực ở địa phương sẽ giảm xuống mức thấp nhất trong đợt rét này.",
+    },
+    {
+        'article' : ' Hà Nội chuyển hướng phòng, chống dịch ',
+        'images' : '/SK1.jpeg',
+        'link': '/Tin',
+        "para":"Ngày 23/11, Giám đốc Đài Khí tượng thủy văn tỉnh Lào Cai Lưu Minh Hải cho biết, không khí lạnh đang tăng cường xuống Lào Cai đạt ngưỡng cực đại, kéo theo nhiệt độ các khu vực ở địa phương sẽ giảm xuống mức thấp nhất trong đợt rét này.",
+    },
+    {
+        'article' : ' Hà Nội chuyển hướng phòng, chống dịch ',
+        'images' : '/SK1.jpeg',
+        'link': '/Tin',
+        "para":"Ngày 23/11, Giám đốc Đài Khí tượng thủy văn tỉnh Lào Cai Lưu Minh Hải cho biết, không khí lạnh đang tăng cường xuống Lào Cai đạt ngưỡng cực đại, kéo theo nhiệt độ các khu vực ở địa phương sẽ giảm xuống mức thấp nhất trong đợt rét này.",
+    },
+    {
+        'article' : ' Hà Nội chuyển hướng phòng, chống dịch ',
+        'images' : '/SK1.jpeg',
+        'link': '/Tin',
+        "para":"Ngày 23/11, Giám đốc Đài Khí tượng thủy văn tỉnh Lào Cai Lưu Minh Hải cho biết, không khí lạnh đang tăng cường xuống Lào Cai đạt ngưỡng cực đại, kéo theo nhiệt độ các khu vực ở địa phương sẽ giảm xuống mức thấp nhất trong đợt rét này.",
+    },
+
 ]
 export const HeadNews=[
     {'article' : ' Thủ tướng bắt đầu tham dự Hội nghị COP26, thăm làm việc tại Anh',
@@ -60,31 +91,31 @@ export const TopNew2 = [
     {
         'article' : ' Hà Nội chuyển hướng phòng, ch22222 ',
         'images' : '/SK1.jpeg',
-        'link': '#'
+        'link': '/Tin'
     },
     {
         'article' : ' Hà Nội chuyển hướng phòng, chống dịch ',
         'images' : '/SK1.jpeg',
-        'link': '#'
+        'link': '/Tin'
     },
     {
         'article' : ' Hà Nội chuyển hướng phòng, chống dịch ',
         'images' : '/Refer1.png',
-        'link': '#'
+        'link': '/Tin'
     },
     {
         'article' : ' Hà Nội chuyển hướng phòng, chống dịch ',
         'images' : '/SK1.jpeg',
-        'link': '#'
+        'link': '/Tin'
     },
     {
         'article' : ' Hà Nội chuyển hướng phòng, chống dịch ',
         'images' : '/SK1.jpeg',
-        'link': '#'
+        'link': '/Tin'
     },
     {
         'article' : ' Hà Nội chuyển hướng phòng, chống dịch ',
         'images' : '/SK1.jpeg',
-        'link': '#'
+        'link': '/Tin'
     },
 ]

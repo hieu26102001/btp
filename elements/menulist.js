@@ -7,5 +7,14 @@ export const Menulist = atom({
 
 export const MucMenu = atom ({
     key: 'Muc',
-    default:[]
+    default:{
+        id:0
+    },
+})
+
+export const Menulistclick = atom({
+    key: 'Menuonclick',
+    default:{
+        list: []
+    }
 })

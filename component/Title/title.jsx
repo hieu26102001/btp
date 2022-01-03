@@ -1,4 +1,7 @@
 import Image from 'next/image'
+import Bgcard from '../Card/bgcard'
+import ColCard from '../Card/ColCard'
+import Rowcard from '../Card/RowCard'
 export default function Title({Title , New, isActive, children}){
 
 return(
@@ -10,19 +13,14 @@ return(
    <div className="block grid-cols-12 lg:grid  rounded-lg shadow-sm dark:bg-gray-800">
        {isActive?
       <div className="col-span-6 ">
-         <div className="items-center p-4">
+         <div className="items-center p-2">
          {
                            New.map((item, i) => {
                                 return( 
                                     <>
                                         {
                                             i == 0 ?
-                                            <div   style={{backgroundImage:`url(${item.images})` }} className="flex bg-cover  overflow-visible  shadow-lg hover:shadow-2xl text-xl items-end md:h-96 h-60 mb-5 bg-center">
-                                                <a  href={item.link} >
-                                                    <div  className="text-primary text-2xl font-bold text-end px-2">
-                                                    <>{item.article}</> </div>
-                                                </a>
-                                            </div>:null
+                                           <Bgcard item={item} hmd="h-96" h="h-60"/>:null
                                          
                                         }
                                     </>
@@ -32,21 +30,21 @@ return(
          </div>
       </div>:null }
       <div className={isActive? "flex col-span-6":"flex col-span-full"}>
-         {/* <!-- component --> */}
-         <section className="container px-6 py-4 mx-auto ">
-            <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2 ">
-               {/* <!-- Card 1 --> */}
+         <section className="container px-2 py-2 mx-auto ">
+            <div className="lg:grid gap-4 lg:grid-cols-2 ">
                         {
                            New.map((item, i) => {
                                 return( 
                                     <>
                                        {
                                             i != 0 && i <= 4  ?
-                                            <div className="font-semibold hover:shadow-2xl justify-center ">
-                                                <a  href={item.link} className="flex lg:block items-center">
-                                                    <Image  src ={item.images} width={300} height={150}/>
-                                                    <div className="ml-2">{item.article}</div>
-                                                </a>
+                                            <div >
+                                                <div className="hidden lg:flex">
+                                                    <ColCard item={item} w={300} h={150} />
+                                                </div>
+                                                <div className="lg:hidden my-2 flex">
+                                                    <Rowcard item={item} w={150} h={80} ActiveImg={true}/>
+                                                </div>
                                             </div>:null
                                         }
                                     </>

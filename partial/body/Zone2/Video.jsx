@@ -1,14 +1,17 @@
 import { Multihead, Multinews } from "../../../elements/body/Multinews";
 import { TopNew } from "../../../elements/news";
+import Link from "next/link";
 export default function Video(){
-console.log(typeof Multinews)
+    
 return(
 <div className="bg-gray-dark mt-10" >
    <div className="flex text-lg text-primary content-end border-b-2 border-gray-400 border-solid mt-1">
-        <h4 className="px-3 text-2xl text-red-800 font-semibold py-1">VIDEO</h4>
+        <h4 className="px-3 text-2xl text-primary font-semibold py-1">VIDEO</h4>
             {
                 Multihead.map(item=> {return(
-                <a className="px-3 font-semibold content-center hidden lg:flex mt-1 pb-1" href={item.link}>{item.title}</a>
+                <Link className="px-3 font-semibold content-center hidden lg:flex mt-1 pb-1" href="/Muc">
+                    <div>{item.title}</div>
+                </Link>
                 )})
             }
    </div>
@@ -24,7 +27,7 @@ return(
                                             <div className="text-3xl">
                                                 <a  href={item.link}>
                                                     <img  src ={item.images}  layout="responsive" />
-                                                    <h3>{item.article}</h3>
+                                                    <h3 className="mt-2">{item.article}</h3>
                                                 </a>
                                             </div>:null
                                         }

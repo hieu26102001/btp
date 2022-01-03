@@ -171,6 +171,11 @@ export const Menu2 = {
         'title' : 'Người lính',
         id: 9,
         link:'',
+        'list' :[
+            {
+                items: '',
+                link : ''
+            },]
       },
       'Xe':{
         'title' : 'Xe',
@@ -306,5 +311,10 @@ export const Menu2 = {
         'title' : 'Tôi nghĩ',
         id: 16,
         link:'',
+        'list' :[
+            {
+                items: '',
+                link : ''
+            },]
       }
 }   

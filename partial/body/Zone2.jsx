@@ -1,22 +1,24 @@
 import Hoahau from "./Zone2/Hoahau";
-import News1 from "./Zone2/News1";
 import Video from "./Zone2/Video";
 import { TopNew, TopNew2 } from "../../elements/news"
+import Cate from "../../component/Title/Cate";
+import Title from "../../component/Title/title";
+
 export default function Zone2(){
     return(
         <div className="mx-auto">
             <div className=" grid md:grid-cols-3  grid-cols-1 mt-2 gap-x-8">
-                <News1 TopNew={TopNew} title="Giar tri"></News1>
-                <News1 TopNew={TopNew2} title="Giar tri"/>
-                <News1 TopNew={TopNew} title="Giar tri"/>
+                <Cate New={TopNew} title="GIỚI TRẺ"/>
+                <Cate New={TopNew2} title="GIÁO DỤC"/>
+                <Cate New={TopNew} title="SỨC KHỎE"/>
             </div>
             <Video/>
-            <div className=" grid md:grid-cols-3 grid-cols-1 mt-2 gap-x-8">
-                <News1 TopNew={TopNew} title="Giar tri" Active={true}/>
-                <News1 TopNew={TopNew} title="Giar tri" Active={true}/>
-                <News1 TopNew={TopNew} title="Giar tri" Active={true}/>
+            <div className=" grid lg:grid-cols-3 grid-cols-1 mt-2 gap-x-8">
+                <Cate New={TopNew} title="NHỊP SỐNG" Active={true}/>
+                <Cate New={TopNew} title="THỂ THAO" Active={true}/>
+                <Cate New={TopNew} title="NGƯỜI LÍNH" Active={true}/>
             </div>
-            <Hoahau/>
+            <Title Title="Hoa Hau" New={TopNew} isActive={true}/>
         </div>
     )
 }

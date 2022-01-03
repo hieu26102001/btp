@@ -1,5 +1,5 @@
 import Image from 'next/image'
-
+import Link from 'next/link'
 
 export default function Header(){
     var today = new Date()
@@ -13,22 +13,22 @@ export default function Header(){
         <div className="pt-5 lg:block hidden">
             <div className="flex justify-center">
                 <div className='flex justify-end container'>
-                    <ul className='flex list-none mb-0 mt-3 text-right text-gray '>
-                        <li className='px-4'>TÒA SOẠN</li>
-                        <li className='px-4'>QUẢNG CÁO</li>
-                        <li className='px-4'>Hotline: 0865.015.015 - 0977.456.112</li>
-                    </ul>
+                    <div className='flex list-none mb-0 mt-3 text-right text-gray '>
+                        <div className='px-4'>TÒA SOẠN</div>
+                        <div className='px-4'>QUẢNG CÁO</div>
+                        <div className='px-4'>Hotline: 0865.015.015 - 0977.456.112</div>
+                    </div>
 
                     <div className='flex h-34'>
-                        <a className="px-2">
+                        <div className="px-2">
                             <img height="34px" width="131px" src='/Sinhvien.png'/>
-                        </a>
-                        <a className='px-2 h-34'>
+                        </div>
+                        <div className='px-2 h-34'>
                             <img height="34px" width="57px"  src='/hoahoctro.png'/>
-                        </a>
-                        <a className='px-2'>
+                        </div>
+                        <div className='px-2'>
                             <img height="34px" width="97px" src='/tamviet.png' />
-                        </a>
+                        </div>
                     </div>
                     <div className='relate_site'>
                         <img></img>
@@ -38,7 +38,10 @@ export default function Header(){
                 <div  >
                     <div className='flex h-20 bg-red justify-center'>
                         <div className="flex flex-wrap justify-between container pb-2 font-normal mx-auto">
-                            <a className='mt-2 flex-2' href="/"><img src='http://localhost:3000/Logo.png'/></a>
+                            <div className='mt-2 flex-2 ' >
+                                <Link href="/"><img src='http://localhost:3000/Logo.png'/></Link>
+                            </div>
+                            
                             <div className='flex items-end pb-2'><div>DIEN BIEN COVID</div></div>
                             <div className="text-xs items-center">
                                 <div className="text-primary pb-2 pt-1">

@@ -1,13 +1,16 @@
 import Image from 'next/image'
+import Link from 'next/link'
 export default function News1({TopNew,title,children,Active}){
     return(
      
             <div className="mb-2">
-                <a href="/Muc"> 
-                   <h2 className="flex bg-white text-primary text-bold ">
-                    <span className="bg-gray-700 p-2 items-center "> {title} </span>
-                    </h2>
-                </a>
+                <Link href="/Muc"> 
+                    <div>
+                        <div className="flex bg-white text-primary text-bold ">
+                            <span className="bg-gray-700 p-2 items-center "> {title} </span>
+                        </div>
+                    </div>
+                </Link>
                 <div className=" lg:col-span-5 w-full">
                 
                         {

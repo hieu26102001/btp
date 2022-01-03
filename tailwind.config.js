@@ -22,8 +22,16 @@ module.exports = {
           },
       },
       fontFamily:{
-        'sans': ['Roboto', 'Helvetica', 'Arial', 'sans-serif']
-      }
+        'sans': ['Roboto', 'sans-serif']
+      },
+      textColor: {
+        'primary': '#fff',
+        'secondary': '#ffed4a',
+        'danger': '#e3342f',
+        gray: {
+          DEFAULT:'#adb5bd'
+       },
+      },
     },
    
     container: {
@@ -43,14 +51,7 @@ module.exports = {
       inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
       none: 'none',
     },
-    textColor: {
-      'primary': '#fff',
-      'secondary': '#ffed4a',
-      'danger': '#e3342f',
-      gray: {
-        DEFAULT:'#adb5bd'
-     },
-    },
+ 
 
   },
 
