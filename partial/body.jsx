@@ -12,7 +12,7 @@ export default function Body(){
     return(
         <div>
             <Top New={TopNew} Active={false} n={8}/>
-            <Refer Refer={ReferNews} isTitle={true}/>
+            <Refer Refer={ReferNews}/>
             <Multi/>
             <Zone1/>
             <Zone2/>

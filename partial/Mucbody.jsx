@@ -53,7 +53,7 @@ export default function Mucbody() {
                     <span className="bg-red p-2 items-center ">KHÁM PHÁ  </span>
                 </div>
 
-                <Swiper New={Left1} />
+                <Swiper New={Left1} n={4}/>
 
             </div>
 

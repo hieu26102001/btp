@@ -19,35 +19,27 @@ import ColCard from "./Card/ColCard";
 SwiperCore.use([Pagination, Navigation, Autoplay]);
 
 
-export default function Swipe({ New,n }) {
+export default function SwiperHead() {
 
 
 
     return (
-        <div className="p-2">
-            <Swiper slidesPerView={n}
+        <div className="p-2 ml-2">
+            <Swiper slidesPerView={2}
                 spaceBetween={0}
-                slidesPerGroup={n}
+                slidesPerGroup={2}
                 loop={true}
                 loopFillGroupWithBlank={false}
-                pagination={{
-                    "clickable": true
-                }}
                 autoplay={{
                     "delay": 2500,
                     "disableOnInteraction": true
                 }}
                 navigation={false}>
-                {New.map((item, i) => {
-                    return (
-                        <SwiperSlide>
-                        <div className="px-4">
-                                <ColCard item={item} w={300} h={180} />
-                        </div>
-                        </SwiperSlide>
-                    )
-                })
-                }
+                        <SwiperSlide>CHỐNG TIN GIẢ TIN XẤU</SwiperSlide>
+                        <SwiperSlide>AFF CUP 2020</SwiperSlide>
+                        <SwiperSlide>HOA HỌC TRÒ - 30 NĂM ƯƠM MẦM</SwiperSlide>
+                        <SwiperSlide>CHIẾN DỊCH VẮC XIN COVID-19</SwiperSlide>
+                        <SwiperSlide>CHỦ NHẬT ĐỎ 2022</SwiperSlide>
             </Swiper>
         </div>
     )
