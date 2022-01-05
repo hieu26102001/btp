@@ -41,7 +41,7 @@ export default function Swipe({ New,n }) {
                 {New.map((item, i) => {
                     return (
                         <SwiperSlide>
-                        <div className="px-4">
+                        <div className="px-2">
                                 <ColCard item={item} w={300} h={180} />
                         </div>
                         </SwiperSlide>

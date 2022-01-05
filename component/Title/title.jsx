@@ -13,14 +13,16 @@ return(
    <div className="block grid-cols-12 lg:grid  rounded-lg shadow-sm dark:bg-gray-800">
        {isActive?
       <div className="col-span-6 ">
-         <div className="items-center p-2">
+         <div className="items-center p-2 lg:grid grid-rows-1 text-2xl">
          {
                            New.map((item, i) => {
                                 return( 
                                     <>
                                         {
                                             i == 0 ?
-                                           <Bgcard item={item} hmd="h-96" h="h-60"/>:null
+                                           <Bgcard item={item} w={650} h={420}/>
+                                       
+                                        :null
                                          
                                         }
                                     </>
@@ -40,7 +42,7 @@ return(
                                             i != 0 && i <= 4  ?
                                             <div >
                                                 <div className="hidden lg:flex">
-                                                    <ColCard item={item} w={300} h={150} />
+                                                    <ColCard item={item} w={300} h={140} />
                                                 </div>
                                                 <div className="lg:hidden my-2 flex">
                                                     <Rowcard item={item} w={150} h={80} ActiveImg={true}/>

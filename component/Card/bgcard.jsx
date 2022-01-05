@@ -1,11 +1,12 @@
 import Link from 'next/link'
-export default function Bgcard({item,hmd,h}) {
+import Image from 'next/image'
+export default function Bgcard({item,w,h}) {
     return (
-        <div style={{ backgroundImage: `url(${item.images})` }} className={`md:${hmd} ${h} flex bg-cover  overflow-visible  shadow-lg hover:shadow-2xl text-xl items-end mb-5 bg-center `}>
-            <a href={item.link} >
-                <div className="text-primary text-2xl font-bold text-end px-2">
-                    <>{item.article}</> </div>
+        <Link href={item.link} >
+            <a className='relative text-primary'>
+                <Image src={item.images} width={w} height={h}/>
+                <div className='absolute bottom-2 left-1'>{item.article}</div>
             </a>
-        </div>
+        </Link>
     )
 }   

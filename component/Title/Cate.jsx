@@ -25,7 +25,7 @@ export default function Cate({ New, title, Active }) {
                                     {
                                         i == 0 ?
                                             <div className='text-xl font-bold mb-2'>
-                                                <Bgcard item={item} hmd="h-44" h="h-36"/>
+                                                <Bgcard item={item} w={600} h={400} />
                                             </div>
                                             : null
                                     }

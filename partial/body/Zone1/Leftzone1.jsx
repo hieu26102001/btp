@@ -10,11 +10,10 @@ export default function LeftZone1(){
    
 
         return(
-        <div className="grid mx-auto px-2 col-span-6 mt-2">
-                <News New={Left1} n={10}/>
-            {/* <!-- component --> */}
+        <div className="grid mx-auto col-span-6 mt-2">
+                <News New={Left1} n={10} Active={true}/>
                <Title Title="Giai tri" New={Left1} isActive={false} /> 
-                <News New={Left1} n={10}/>
+                <News New={Left1} n={10} Active={true}/>
                 
         </div>
         )

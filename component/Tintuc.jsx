@@ -1,5 +1,4 @@
 import { Tin } from "../elements/Tintuc";
-import News1 from "../partial/body/Zone2/News1";
 import { Left1 } from "../elements/body/Zone1News";
 import Image from "next/image";
 import RightTop from "./Title/Top/RightTop";
@@ -21,7 +20,7 @@ export default function Tintuc(){
 
                     <div className="my-2">
                         {item.para.map((items) => 
-                        <div className="my-2 text-lg">{items}</div>
+                        <div className="my-2 ">{items}</div>
                         )}
                     </div>
 
