@@ -37,22 +37,22 @@ export default function Header() {
                 </div>
             </div>
             <div  >
-                <div className='flex h-20 bg-red justify-center'>
-                    <div className="flex flex-wrap justify-center items-end container pb-2 font-normal mx-auto">
-                        <div className='mt-2 flex-2 w-1/6' >
+                <div className='flex bg-red justify-center'>
+                    <div className="flex flex-wrap justify-center items-end container pb-2 font-normal mx-auto ">
+                        <div className='mt-2 flex-2 w-1/5' >
                             <Link href="/"><img src='http://localhost:3000/Logo.png' /></Link>
                         </div>
 
-                        <div className='text-primary  w-2/3'>
+                        <div className='text-primary  w-3/5'>
                             <SwiperHead />
                         </div>
-                        <div className="text-sm items-center w-1/6">
+                        <div className="text-sm items-start w-1/5 py-1">
                             <div className="text-primary pb-2 pt-1">
                                 {new Intl.DateTimeFormat('vi-VN', options).format(today)},
                                 ngày &nbsp; {date} / {month} / {year}
                             </div>
-                            <div class="container flex mx-auto ">
-                                <div class="flex border-2 rounded">
+                            <div class=" mx-auto ">
+                                <div class="flex rounded">
                                     <input type="text" class="px-4 py-2 h-8" placeholder="Search..." />
                                 </div>
                             </div>

@@ -20,7 +20,7 @@ return(
                                     <>
                                         {
                                             i == 0 ?
-                                           <Bgcard item={item} w={650} h={420}/>
+                                           <Bgcard item={item} w={750} h={500}/>
                                        
                                         :null
                                          

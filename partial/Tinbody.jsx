@@ -20,7 +20,7 @@ export default function Tinbody() {
                   <div className="lg:w-3/4 mr-4">
                      <Tintuc />
                   </div>
-                  <div className="lg:w-1/4 hidden lg:block   ">
+                  <div className="lg:w-1/4 hidden lg:block text-sm  ">
                      <div className="border-2 border-gray p-2 mb-2 ">
                         <div className="border-b-4 border-red text-2xl mb-2">XEM NHIỀU</div>
                         <RightTop New={Left1} n={4} />
