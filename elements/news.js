@@ -13,7 +13,7 @@ export const TopNew = [
     },
     {
         'article' : ' Hà Nội chuyển hướng phòng, chống dịch ',
-        'images' : '/SK1.jpeg',
+        'images' : '/Refer1.png',
         'link': '/Tin',
         "para":"Ngày 23/11, Giám đốc Đài Khí tượng thủy văn tỉnh Lào Cai Lưu Minh Hải cho biết, không khí lạnh đang tăng cường xuống Lào Cai đạt ngưỡng cực đại, kéo theo nhiệt độ các khu vực ở địa phương sẽ giảm xuống mức thấp nhất trong đợt rét này.",
     },
@@ -24,20 +24,20 @@ export const TopNew = [
         "para":"Ngày 23/11, Giám đốc Đài Khí tượng thủy văn tỉnh Lào Cai Lưu Minh Hải cho biết, không khí lạnh đang tăng cường xuống Lào Cai đạt ngưỡng cực đại, kéo theo nhiệt độ các khu vực ở địa phương sẽ giảm xuống mức thấp nhất trong đợt rét này.",
     },
     {
-        'article' : ' Hà Nội chuyển hướng phòng, chống dịch ',
-        'images' : '/SK1.jpeg',
+        'article' : ' ABCDE chống dịch ',
+        'images' : '/Refer1.png',
         'link': '/Tin',
         "para":"Ngày 23/11, Giám đốc Đài Khí tượng thủy văn tỉnh Lào Cai Lưu Minh Hải cho biết, không khí lạnh đang tăng cường xuống Lào Cai đạt ngưỡng cực đại, kéo theo nhiệt độ các khu vực ở địa phương sẽ giảm xuống mức thấp nhất trong đợt rét này.",
     },
     {
         'article' : ' Hà Nội chuyển hướng phòng, chống dịch ',
-        'images' : '/SK1.jpeg',
+        'images' : '/Refer2.png',
         'link': '/Tin',
         "para":"Ngày 23/11, Giám đốc Đài Khí tượng thủy văn tỉnh Lào Cai Lưu Minh Hải cho biết, không khí lạnh đang tăng cường xuống Lào Cai đạt ngưỡng cực đại, kéo theo nhiệt độ các khu vực ở địa phương sẽ giảm xuống mức thấp nhất trong đợt rét này.",
     },
     {
         'article' : ' Hà Nội chuyển hướng phòng, chống dịch ',
-        'images' : '/SK1.jpeg',
+        'images' : '/Refer3.jpg',
         'link': '/Tin',
         "para":"Ngày 23/11, Giám đốc Đài Khí tượng thủy văn tỉnh Lào Cai Lưu Minh Hải cho biết, không khí lạnh đang tăng cường xuống Lào Cai đạt ngưỡng cực đại, kéo theo nhiệt độ các khu vực ở địa phương sẽ giảm xuống mức thấp nhất trong đợt rét này.",
     },

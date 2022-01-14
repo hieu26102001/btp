@@ -51,9 +51,9 @@ export default function Header() {
                                 {new Intl.DateTimeFormat('vi-VN', options).format(today)},
                                 ngày &nbsp; {date} / {month} / {year}
                             </div>
-                            <div class=" mx-auto ">
-                                <div class="flex rounded">
-                                    <input type="text" class="px-4 py-2 h-8" placeholder="Search..." />
+                            <div className=" mx-auto ">
+                                <div className="flex rounded">
+                                    <input type="text" className="px-4 py-2 h-8" placeholder="Search..." />
                                 </div>
                             </div>
                         </div>

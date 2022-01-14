@@ -10,7 +10,7 @@ import News from "../component/Title/News";
 export default function Mucbody() {
 
     return (
-        <div className="col-span-9">
+        <div className="col-span-9" >
             <div className="mb-4">
                 <TitleName />
             </div>

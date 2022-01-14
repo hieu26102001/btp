@@ -30,9 +30,6 @@ export default function Swipe({ New,n }) {
                 slidesPerGroup={n}
                 loop={true}
                 loopFillGroupWithBlank={false}
-                pagination={{
-                    "clickable": true
-                }}
                 autoplay={{
                     "delay": 2500,
                     "disableOnInteraction": true

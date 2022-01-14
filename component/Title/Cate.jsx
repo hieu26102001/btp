@@ -6,7 +6,7 @@ import Rowcard from '../Card/RowCard'
 export default function Cate({ New, title, Active }) {
     return (
 
-        <div className="mb-2">
+        <div className="mb-4">
             <Link href="/Muc">
                 <div>
                     <div className="flex bg-white text-primary text-bold border-b-2 border-gray mb-2">

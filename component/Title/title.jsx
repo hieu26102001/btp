@@ -1,15 +1,25 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import Bgcard from '../Card/bgcard'
 import ColCard from '../Card/ColCard'
 import Rowcard from '../Card/RowCard'
+import { Multihead } from '../../elements/body/Multinews'
 export default function Title({Title , New, isActive, children}){
 
 return(
 <div className="bg-gray-light mt-10 mb-4" >
-   <div className="flex text-lg content-end pt-2 border-t-8 border-solid border-gray border-b-2">
-        <h4 className="px-3 text-2xl text-red-800 font-semibold">{Title}</h4>
-    </div>
-    
+<div className="flex text-lg  content-end border-b-2 border-gray-400 border-t-4 border-solid mt-1">
+        <h4 className="px-3 text-2xl  font-semibold py-1">{Title}</h4>
+            {
+                Multihead.map(item=> {return(
+                    <div className="px-3 font-semibold items-end hidden lg:flex mt-1 pb-1">
+                <Link  href="/Muc">
+                    <div>{item.title}</div>
+                </Link>
+                </div>
+                )})
+            }
+   </div>
    <div className="block grid-cols-12 lg:grid  rounded-lg shadow-sm dark:bg-gray-800">
        {isActive?
       <div className="col-span-6 ">
@@ -45,7 +55,7 @@ return(
                                                     <ColCard item={item} w={300} h={140} />
                                                 </div>
                                                 <div className="lg:hidden my-2 flex">
-                                                    <Rowcard item={item} w={150} h={80} ActiveImg={true}/>
+                                                    <Rowcard item={item} w={200} h={120} ActiveImg={true}/>
                                                 </div>
                                             </div>:null
                                         }

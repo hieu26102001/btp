@@ -1,13 +1,13 @@
 export const Multihead = [
-    {"items":"LONGFORM",
+    {"title":"LONGFORM",
     "link":"",},
-    {"items":"INFO",
+    {"title":"INFO",
     "link":"",},
-    {"items":"QUIZZ",
+    {"title":"QUIZZ",
     "link":"",},
-    {"items":"VIDEO",
+    {"title":"VIDEO",
     "link":"",},
-    {"items":"ANH",
+    {"title":"ANH",
     "link":"",}
 ]
 export const Multinews = [

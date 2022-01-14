@@ -5,5 +5,5 @@ import Title from "../../../component/Title/title";
 export default function Hoahau(){
 
 return(
-    <Title Title="Hoa Hau" New={TopNew} isActive={true}/>
+    <Title Title="HOA HAU" New={TopNew} isActive={true}/>
 )}

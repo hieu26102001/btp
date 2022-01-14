@@ -5,6 +5,6 @@ import Title from "../../component/Title/title";
 export default function Multi(){
 
 return(
-    <Title Title="Multimedia" New={TopNew} isActive={true}/>
+    <Title Title="MULTIMEDIA" New={TopNew} isActive={true}/>
 )
 }

@@ -12,13 +12,13 @@ export default function Zone2(){
                 <Cate New={TopNew2} title="GIÁO DỤC"/>
                 <Cate New={TopNew} title="SỨC KHỎE"/>
             </div>
-            <Video/>
+            <div> <Video/></div>
             <div className=" grid lg:grid-cols-3 grid-cols-1 mt-2 gap-x-8">
                 <Cate New={TopNew} title="NHỊP SỐNG" Active={true}/>
                 <Cate New={TopNew} title="THỂ THAO" Active={true}/>
                 <Cate New={TopNew} title="NGƯỜI LÍNH" Active={true}/>
             </div>
-            <Title Title="Hoa Hau" New={TopNew} isActive={true}/>
+            <Title Title="HOA HAU" New={TopNew} isActive={true}/>
         </div>
     )
 }

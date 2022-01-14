@@ -14,3 +14,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.gallery-thumbs .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
